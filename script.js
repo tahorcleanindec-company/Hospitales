@@ -141,7 +141,7 @@ const products = [
             'Facil enjuague'
         ],
         images: [
-            'img/35658 SANITIZANTE 20l.webp'
+            'img/35658 AC SANITIZANTE 20L.webp'
         ],
         video: null,
         prices: {
@@ -170,8 +170,13 @@ const products = [
             'Presentacion aerosol'
         ],
         images: [
-            'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&h=400&fit=crop',
-            'https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?w=600&h=400&fit=crop'
+            'img/59212 SEGURICELAN BAÑO.webp',
+            'img/59212 SEGURICLEAN BAÑO GLR.webp',
+            'img/59267 SEGURICLEAN BAÑO 20L (3).webp'
+
+
+
+            
         ],
         video: null,
         prices: {

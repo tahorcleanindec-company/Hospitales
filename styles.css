@@ -1003,9 +1003,12 @@ input, textarea, select {
 
 .product-image {
     position: relative;
-    height: 160px;
-    background: var(--muted);
+    height: 200px;
+    /* FIX: fondo neutro para que se vea bien con contain */
+    background: #f8fafc;
     overflow: hidden;
+    /* FIX: separación visual sutil */
+    border-bottom: 1px solid var(--border);
 }
 @media (min-width: 640px) {
     .product-image { height: 200px; }
@@ -1014,11 +1017,16 @@ input, textarea, select {
 .product-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* FIX: contain en lugar de cover — muestra el producto completo */
+    object-fit: contain;
+    object-position: center;
+    /* FIX: padding interno para que el producto no toque los bordes */
+    padding: 0.75rem;
     transition: var(--transition);
 }
-.product-card:hover .product-image img { transform: scale(1.08); }
-
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
 .product-overlay {
     position: absolute;
     inset: 0;
@@ -1500,27 +1508,70 @@ input, textarea, select {
     aspect-ratio: 4/3;
     border-radius: var(--radius);
     overflow: hidden;
-    background: var(--muted);
+    /* FIX: fondo claro para productos con fondo transparente o blanco */
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.gallery-main img,
-.gallery-main video { width: 100%; height: 100%; object-fit: cover; }
+
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    /* FIX: contain para ver el producto completo en el modal */
+    object-fit: contain;
+    object-position: center;
+    /* FIX: padding para que no toque los bordes */
+    padding: 1rem;
+    transition: var(--transition);
+}
+
+
+
+.gallery-main video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 .gallery-thumbs { display: flex; gap: 0.5rem; overflow-x: auto; }
 
 .thumb {
-    width: 72px;
-    height: 54px;
-    flex-shrink: 0;
+    width: 80px;
+    height: 64px;
     border-radius: var(--radius-sm);
     overflow: hidden;
     cursor: pointer;
     border: 2px solid transparent;
-    opacity: 0.6;
+    opacity: 0.65;
     transition: var(--transition);
+    /* FIX: mismo fondo neutro */
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
-.thumb.active { border-color: var(--primary); opacity: 1; }
+.thumb.active {
+    border-color: var(--primary);
+    opacity: 1;
+}
 .thumb:hover { opacity: 1; }
-.thumb img, .thumb video { width: 100%; height: 100%; object-fit: cover; }
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    /* FIX: contain en las miniaturas también */
+    object-fit: contain;
+    padding: 0.375rem;
+}
+
+.thumb video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 .product-modal-info h2 {
     font-size: clamp(1.375rem, 4vw, 1.75rem);
@@ -1648,6 +1699,7 @@ input, textarea, select {
     border-bottom: 1px solid var(--border);
 }
 
+
 .checkout-item { display: flex; justify-content: space-between; font-size: 0.9375rem; }
 .checkout-item-name  { color: var(--foreground); }
 .checkout-item-price { color: var(--muted-foreground); }
@@ -1662,6 +1714,24 @@ input, textarea, select {
     padding-top: 0.5rem;
     border-top: 1px solid var(--border);
 }
+
+.checkout-item-image {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+}
+
+.checkout-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0.25rem;
+}
+
 
 /* ============================================
    CART DRAWER
@@ -1725,13 +1795,26 @@ input, textarea, select {
 .cart-item:last-child { border-bottom: none; }
 
 .cart-item-image {
-    width: 72px;
-    height: 72px;
+    width: 76px;
+    height: 76px;
     border-radius: var(--radius-sm);
     overflow: hidden;
     flex-shrink: 0;
+    /* FIX: fondo neutro */
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.cart-item-image img { width: 100%; height: 100%; object-fit: cover; }
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    /* FIX: contain para ver el producto completo */
+    object-fit: contain;
+    padding: 0.375rem;
+}
 
 .cart-item-info { flex: 1; min-width: 0; }
 .cart-item-name  { font-weight: 600; color: var(--foreground); margin-bottom: 0.25rem; font-size: 0.9375rem; }
@@ -1845,4 +1928,34 @@ input, textarea, select {
 section, header, footer, main {
     max-width: 100vw;
     overflow-x: hidden;
+}
+
+.suggestion-item img {
+    width: 44px;
+    height: 44px;
+    /* FIX: contain en sugerencias también */
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    padding: 0.25rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 639px) {
+    .product-image {
+        height: 180px;
+    }
+}
+
+@media (min-width: 640px) {
+    .product-image {
+        height: 220px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-image {
+        height: 200px;
+    }
 }
