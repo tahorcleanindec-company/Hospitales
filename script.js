@@ -141,8 +141,7 @@ const products = [
             'Facil enjuague'
         ],
         images: [
-            'https://images.unsplash.com/photo-1583947582886-f40ec95dd752?w=600&h=400&fit=crop',
-            'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&h=400&fit=crop'
+            'img/35658 SANITIZANTE 20l.webp'
         ],
         video: null,
         prices: {
