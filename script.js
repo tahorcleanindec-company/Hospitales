@@ -11,21 +11,20 @@ const products = [
         id: 1,
         name: 'Detergente oxigenado',
         category: 'detergentes',
-        description: 'Desinfectante de alto espectro para superficies hospitalarias. Elimina el 99.9% de bacterias y virus.',
-        longDescription: 'Formulacion avanzada desarrollada especificamente para entornos hospitalarios. Eficaz contra bacterias, virus, hongos y esporas. Ideal para quirofanos, UCI, salas de procedimientos y areas criticas.',
+        description: 'Detergente hospitalario oxigenado de alta eficacia, diseñado para limpieza profunda en pisos, superficies y textiles. Su acción activa remueve manchas orgánicas y suciedad persistente, dejando un ambiente limpio y fresco. Ideal para protocolos de limpieza concurrente en áreas críticas.',
+        longDescription: 'Detergente hospitalario oxigenado de alta eficacia, diseñado para limpieza profunda en pisos, superficies y textiles. Su acción activa remueve manchas orgánicas y suciedad persistente, dejando un ambiente limpio y fresco. Ideal para protocolos de limpieza concurrente en áreas críticas.',
         features: [
-            'Elimina 99.9% de germenes',
-            'Accion rapida en 30 segundos',
-            'No deja residuos toxicos',
-            'Compatible con superficies delicadas',
-            'Registro INVIMA'
+            'Acción oxigenada desmanchaste',
+            'Multiuso (superficies y textiles)',
+            'Aroma agradable',
         ],
         images: [
-            'img/59628 DETEROXI GLBR.webp',   // caneca 20L
-            'img/58586 DETEROXI 20L.webp',  // galon
+            'img/Deteroxy1.webp',  // galon
+            'img/59628 DETEROXI GLBR.webp',   
+            'img/58586 DETEROXI 20L.webp',  
         ],
         video: null,
-        prices: { '1L': 2.19, 'galon': 8.93, 'caneca': 32.2 },
+        prices: { '1L': 2.3, 'galon': 8.93, 'caneca': 32.2 },
         codes: { '1L': '59627', 'galon': '59628', 'caneca': '58586' },
         badge: 'new'
     },
@@ -33,21 +32,20 @@ const products = [
         id: 2,
         name: 'Desengrasante biodegradable',
         category: 'detergentes',
-        description: 'Detergente con enzimas para limpieza profunda de instrumental medico y superficies.',
-        longDescription: 'Detergente enzimatico de triple accion formulado para la limpieza previa a la esterilizacion de instrumental medico. Contiene proteasas, lipasas y amilasas.',
+        description: 'Detergente desengrasante neutro formulado para la limpieza diaria de superficies y textiles. Remueve suciedad ligera y grasa sin dañar materiales ni alterar colores. Su fórmula balanceada permite uso frecuente en entornos hospitalarios bajo protocolos de limpieza concurrente.',
+        longDescription: 'Detergente desengrasante neutro formulado para la limpieza diaria de superficies y textiles. Remueve suciedad ligera y grasa sin dañar materiales ni alterar colores. Su fórmula balanceada permite uso frecuente en entornos hospitalarios bajo protocolos de limpieza concurrente.',
         features: [
-            'Triple accion enzimatica',
-            'Biodegradable',
-            'pH neutro',
-            'Seguro para instrumental',
-            'Concentrado de alto rendimiento'
+            'pH neutro seguro',
+            'Remueve grasa ligera',
+            'Apto para uso continuo',
         ],
         images: [
+            'img/deter100bio.webp',   // caneca 20L
             'img/47103 DETERBIO 20L.webp',   // caneca 20L
             'img/47623 DETERBIO GBR.webp',   // galon
         ],
         video: null,
-        prices: { '1L': 2.3, 'galon': 6.8, 'caneca': 32.8 },
+        prices: { '1L': 2.3, 'galon': 8.9, 'caneca': 32.8 },
         codes: { '1L': '48906', 'galon': '47623', 'caneca': '47103' },
         badge: null
     },
@@ -55,18 +53,17 @@ const products = [
         id: 3,
         name: 'Tahor Wash',
         category: 'detergentes',
-        description: 'Solucion antiseptica para lavado quirurgico de manos. Formula con clorhexidina al 4%.',
-        longDescription: 'Antiseptico de amplio espectro con clorhexidina gluconato al 4%. Indicado para la antisepsia quirurgica de manos y antebrazos antes de procedimientos invasivos.',
+        description: 'Detergente concentrado de alta espuma, ideal para limpieza general y lavado de prendas hospitalarias. Su fórmula sin fragancia lo hace perfecto para áreas sensibles. Garantiza una limpieza eficaz sin dejar residuos aromáticos.',
+        longDescription: 'Detergente concentrado de alta espuma, ideal para limpieza general y lavado de prendas hospitalarias. Su fórmula sin fragancia lo hace perfecto para áreas sensibles. Garantiza una limpieza eficaz sin dejar residuos aromáticos.',
         features: [
-            'Clorhexidina 4%',
-            'Efecto residual prolongado',
-            'Suave con la piel',
-            'Fragancia neutra',
-            'Aprobado por FDA'
+            'Alta espuma concentrada',
+            'Sin aroma (uso hospitalario).',
+            'Ideal para textiles y superficies.',
         ],
         images: [
+            'img/tahorwhas1l.webp',  // galon
+            'img/tahorwashgl.webp',  // caneca 20L
             'img/35922 TAHOR WASH 20L.webp',  // caneca 20L
-            'img/35921 TAHOR WASH GLT.webp', // galon
         ],
         video: null,
         prices: { '1L': 2.6, 'galon': 9.57, 'caneca': 36.46 },
@@ -77,23 +74,21 @@ const products = [
         id: 4,
         name: 'Detergente clorado',
         category: 'detergentes',
-        description: 'Limpiador y desinfectante para pisos hospitalarios. Accion 2 en 1 con aroma fresco.',
-        longDescription: 'Limpiador desinfectante concentrado para pisos de hospitales, clinicas y laboratorios. Formula 2 en 1 que limpia y desinfecta en una sola aplicacion.',
+        description: 'Detergente clorado de alto poder desengrasante y desinfectante. Especialmente formulado para limpieza profunda de pisos, baños y prendas blancas. Su contenido de cloro activo permite su uso en procesos de desinfección terminal en áreas de alto riesgo.',
+        longDescription: 'Detergente clorado de alto poder desengrasante y desinfectante. Especialmente formulado para limpieza profunda de pisos, baños y prendas blancas. Su contenido de cloro activo permite su uso en procesos de desinfección terminal en áreas de alto riesgo.',
         features: [
-            'Accion 2 en 1',
-            'Alto poder desengrasante',
-            'Aroma duradero',
-            'No requiere enjuague',
-            'Concentrado economico'
+            'Acción desengrasante + desinfectante',
+            'Contiene cloro activo',
+            'Uso en desinfección terminal',
         ],
         images: [
-
+            'img/deter100cl1.webp',
             'img/35823 DET CLORADO GBR.webp',
             'img/35824 DET CLORADO 20L.webp',  // caneca 20L
               // galon
         ],
         video: null,
-        prices: { '1L': 1.74, 'galon': 4.13, 'caneca': 20.5 },
+        prices: { '1L': 2.3, 'galon': 6, 'caneca': 24.3 },
         codes: { '1L': '42286', 'galon': '37863', 'caneca': '35824' },
         badge: null
     },
@@ -101,17 +96,15 @@ const products = [
         id: 5,
         name: 'Acido Sanitizante',
         category: 'detergentes',
-        description: 'Solucion especial para limpieza y mantenimiento de instrumental quirurgico.',
-        longDescription: 'Solucion de limpieza especialmente formulada para instrumental quirurgico y medico. Protege contra la corrosion y facilita la esterilizacion posterior.',
+        description: 'Limpiador ácido sanitizante formulado para eliminar sarro, óxido y residuos minerales en superficies. Combina ácido fosfórico con amonios cuaternarios, logrando limpieza profunda y desinfección efectiva. Ideal para uso concurrente y terminal en áreas hospitalarias.',
+        longDescription: 'Limpiador ácido sanitizante formulado para eliminar sarro, óxido y residuos minerales en superficies. Combina ácido fosfórico con amonios cuaternarios, logrando limpieza profunda y desinfección efectiva. Ideal para uso concurrente y terminal en áreas hospitalarias.',
         features: [
-            'Proteccion anticorrosiva',
-            'Compatible con ultrasonido',
-            'No daña acabados',
-            'Biodegradable',
-            'Facil enjuague'
+            'Elimina sarro y óxido',
+            'Acción dual: limpia y desinfecta',
+            'Fórmula ácido + amonios',
         ],
         images: [
-
+            'img/acidosanitizante1l.webp', // galon
             'img/35857 ACIDO ZANITIZANTE GLB.webp', // galon
             'img/35658 AC SANITIZANTE 20L.webp',  // caneca 20L
         ],
@@ -124,18 +117,16 @@ const products = [
         id: 6,
         name: 'Seguriclean Baños',
         category: 'detergentes',
-        description: 'Limpiador desinfectante para baños hospitalarios. Elimina sarro, hongos y bacterias.',
-        longDescription: 'Limpiador desinfectante profesional especialmente formulado para baños de hospitales y clinicas. Elimina sarro, hongos, bacterias y malos olores en una sola aplicacion.',
+        description: 'Limpiador desinfectante ácido diseñado para baños hospitalarios. Su fórmula combina ácido fosfórico, peróxido de hidrógeno y amonios cuaternarios, garantizando limpieza profunda, eliminación de incrustaciones y desinfección efectiva, dejando un ambiente higiénico y con aroma agradable.',
+        longDescription: 'Limpiador desinfectante ácido diseñado para baños hospitalarios. Su fórmula combina ácido fosfórico, peróxido de hidrógeno y amonios cuaternarios, garantizando limpieza profunda, eliminación de incrustaciones y desinfección efectiva, dejando un ambiente higiénico y con aroma agradable.',
         features: [
-            'Accion antibacterial',
-            'Neutraliza olores',
-            'Fragancia hipoalergenica',
-            'Larga duracion',
-            'Presentacion aerosol'
+            'Triple acción desinfectante',
+            'Elimina sarro e incrustaciones',
+            'Aroma agradable',
         ],
         images: [
-            'img/59212 SEGURICELAN BAÑO.webp',         // 1L
-            'img/59212 SEGURICLEAN BAÑO GLR.webp',     // galon  — mismo codigo, imagen galon
+            'img/seguriclean1l.webp',         // 1L     // galon  — mismo codigo, imagen galon
+            'img/59212 SEGURICELAN BAÑO.webp',         // 1L     // galon  — mismo codigo, imagen galon
             'img/59267 SEGURICLEAN BAÑO 20L (3).webp', // caneca 20L
         ],
         video: null,
@@ -147,22 +138,20 @@ const products = [
         id: 7,
         name: 'Oxi Quats',
         category: 'desinfectantes_alto_nivel',
-        description: 'Desinfectante de alto nivel con amonio cuaternario y peróxido. Accion rapida y amplio espectro.',
-        longDescription: 'Desinfectante de alto nivel con amonio cuaternario de quinta generacion. Eficaz contra bacterias, virus, hongos y micobacterias. Ideal para superficies criticas en entornos hospitalarios.',
+        description: 'Desinfectante hospitalario de alto nivel formulado con peróxido de hidrógeno y amonios cuaternarios. Ofrece máxima eficacia en superficies críticas, eliminando microorganismos de alto riesgo. Ideal para procesos de desinfección terminal en áreas médicas exigentes.',
+        longDescription: 'Desinfectante hospitalario de alto nivel formulado con peróxido de hidrógeno y amonios cuaternarios. Ofrece máxima eficacia en superficies críticas, eliminando microorganismos de alto riesgo. Ideal para procesos de desinfección terminal en áreas médicas exigentes.',
         features: [
-            'Amplio espectro',
-            'Accion rapida',
-            'Economia en uso',
-            'Alta estabilidad',
-            'Registro sanitario'
+            'Peróxido + amonios cuaternarios',
+            'Alta eficacia antimicrobiana',
+            'Uso en áreas críticas',
         ],
         images: [
-
+            'img/Oxi1l.webp',   // galon
             'img/48085 OXI QUATS GBC.webp',   // galon
             'img/46730 OXIQUATS 20L.webp',    // caneca 20L
         ],
         video: null,
-        prices: { '1L': 3.47, 'galon': 10, 'caneca': 43 },
+        prices: { '1L': 3.5, 'galon': 11, 'caneca': 45 },
         codes: { '1L': '47925', 'galon': '48085', 'caneca': '46730' },
         badge: 'sale'
     },
@@ -170,23 +159,20 @@ const products = [
         id: 8,
         name: 'Sanitizer TC',
         category: 'desinfectantes_alto_nivel',
-        description: 'Desinfectante de alto nivel para instrumental y superficies criticas hospitalarias.',
-        longDescription: 'Desinfectante de alto nivel formulado para la desinfeccion de instrumental medico y superficies criticas. Alta eficacia contra bacterias, virus y hongos.',
+        description: 'Desinfectante oxidante de alto nivel técnico a base de ácido peracético. Diseñado para eliminar bacterias, virus y esporas en ambientes hospitalarios. Su uso es controlado y recomendado para desinfección terminal en superficies de alto riesgo sanitario.',
+        longDescription: 'Desinfectante oxidante de alto nivel técnico a base de ácido peracético. Diseñado para eliminar bacterias, virus y esporas en ambientes hospitalarios. Su uso es controlado y recomendado para desinfección terminal en superficies de alto riesgo sanitario.',
         features: [
-            'Desinfeccion alto nivel',
-            'Accion rapida',
-            'Compatible con instrumental',
-            'No corrosivo',
-            'Registro sanitario'
+            'Contiene ácido peracético',
+            'Acción oxidante potente',
+            'Elimina microorganismos resistentes',
         ],
         images: [
-
+            'img/.webp',   // galon
             'img/35657 SANITIZER TC.webp',
-            'img/35658 SANITIZER 20L.webp',   // caneca 20L — codigo similar
-                // presentacion TC
+            'img/35658 SANITIZER 20L.webp',   
         ],
         video: null,
-        prices: { '1L': 3.26, 'galon': 7.92, 'caneca': 30.59 },
+        prices: { '1L': 3.26, 'galon': 10, 'caneca': 39.99 },
         codes: { '1L': '35954', 'galon': '35955', 'caneca': '35956' },
         badge: null
     },
@@ -194,23 +180,20 @@ const products = [
         id: 9,
         name: 'Sanibat',
         category: 'desinfectantes_alto_nivel',
-        description: 'Desinfectante bactericida y virucida para superficies hospitalarias de alto trafico.',
-        longDescription: 'Desinfectante de amplio espectro con accion bactericida, virucida y fungicida. Formulado para la desinfeccion de superficies hospitalarias de alto trafico.',
+        description: 'Desinfectante hospitalario a base de amonios cuaternarios de alta concentración. Proporciona amplio espectro antimicrobiano para uso en múltiples superficies. Ideal para protocolos de desinfección concurrente y terminal en ambientes hospitalarios.',
+        longDescription: 'Desinfectante hospitalario a base de amonios cuaternarios de alta concentración. Proporciona amplio espectro antimicrobiano para uso en múltiples superficies. Ideal para protocolos de desinfección concurrente y terminal en ambientes hospitalarios.',
         features: [
-            'Bactericida y virucida',
-            'Secado rapido',
-            'No mancha superficies',
-            'No pegajoso',
-            'Registro sanitario'
+            'Alta concentración de amonios',
+            'Amplio espectro bactericida',
+            'Uso continuo y terminal',
         ],
         images: [
-
+            'img/sanibat1l.webp',   // galon
             'img/35969 SANIBAT GLBR.webp',
-            'img/36971 SANIBAT 20L.webp',    // caneca 20L
-               // galon
+            'img/36971 SANIBAT 20L.webp',    
         ],
         video: null,
-        prices: { '1L': 2.39, 'galon': 7.83, 'caneca': 34.75 },
+        prices: { '1L': 2.5, 'galon': 9, 'caneca': 37 },
         codes: { '1L': '35968', 'galon': '45623', 'caneca': '35971' },
         badge: null
     },
@@ -218,23 +201,21 @@ const products = [
         id: 10,
         name: 'Dioxigen HD',
         category: 'desinfectantes_rutinarios',
-        description: 'Desinfectante a base de dioxido de cloro para superficies hospitalarias de alto nivel.',
-        longDescription: 'Desinfectante a base de dioxido de cloro de alta pureza. Eficaz contra bacterias, virus, hongos y esporas. Ideal para areas criticas hospitalarias.',
+        description: 'Desinfectante de alta eficacia formulado con peróxido de hidrógeno estabilizado. Ideal para reducir carga microbiana en superficies de alto tránsito, eliminando olores y garantizando ambientes seguros bajo protocolos de limpieza diaria hospitalaria.',
+        longDescription: 'Desinfectante de alta eficacia formulado con peróxido de hidrógeno estabilizado. Ideal para reducir carga microbiana en superficies de alto tránsito, eliminando olores y garantizando ambientes seguros bajo protocolos de limpieza diaria hospitalaria.',
         features: [
-            'Dioxido de cloro puro',
-            'Amplio espectro',
-            'Accion rapida',
-            'No corrosivo en uso diluido',
-            'Registro sanitario'
+            'Alta desinfección',
+            'Control de olores',
+            'Uso intensivo diario',
         ],
         images: [
-
+            'img/dioxigen hd1l.webp',   // galon
             'img/41663 DIOXIGENT HD.webp',
-            'img/46464 DIOXIGENT HD 20L.webp',  // caneca 20L
+            'img/46464 DIOXIGENT HD 20L.webp',  
        // presentacion
         ],
         video: null,
-        prices: { '1L': 3.5, 'galon': 9.14, 'caneca': 39.3 },
+        prices: { '1L': 3.5, 'galon': 10, 'caneca': 43 },
         codes: { '1L': '45363', 'galon': '41663', 'caneca': '46464' },
         badge: null
     },
@@ -242,59 +223,37 @@ const products = [
         id: 11,
         name: 'Dioxigen Multiusos',
         category: 'desinfectantes_rutinarios',
-        description: 'Desinfectante multiusos para limpieza rutinaria de superficies hospitalarias.',
-        longDescription: 'Desinfectante multiusos de uso rutinario para la limpieza y desinfeccion de superficies hospitalarias. Formula equilibrada para uso diario.',
+        description: 'Desinfectante multiuso que limpia y desinfecta simultáneamente. Su fórmula permite uso en diversas superficies hospitalarias, facilitando procesos de limpieza rutinaria con alta eficiencia y seguridad operativa.',
+        longDescription: 'Desinfectante multiuso que limpia y desinfecta simultáneamente. Su fórmula permite uso en diversas superficies hospitalarias, facilitando procesos de limpieza rutinaria con alta eficiencia y seguridad operativa.',
         features: [
-            'Uso multiusos',
-            'Accion bactericida',
-            'Fragancia agradable',
-            'No requiere enjuague',
-            'Economico'
+            'Limpia y desinfecta',
+            'Uso versátil',
+            'Aplicación diaria',
         ],
         images: [
-            'img/56567 DIOXIGENT MULTIUSOS.webp', // presentacion
+            "img/dioxigenpro1.webp",
+            'img/56567 DIOXIGENT MULTIUSOS.webp',
+            "img/dioxigenpro.webp" // presentacion
         ],
         video: null,
-        prices: { '1L': 2.18, 'galon': 9.65, 'caneca': 34.7 },
+        prices: { '1L': 2.5, 'galon': 9, 'caneca': 33 },
         codes: { '1L': '56568', 'galon': '56567', 'caneca': '59106' },
         badge: null
     },
-    {
-        id: 12,
-        name: 'Peroxy',
-        category: 'desinfectantes_rutinarios',
-        description: 'Desinfectante a base de peroxido de hidrogeno para superficies y equipos hospitalarios.',
-        longDescription: 'Desinfectante a base de peroxido de hidrogeno estabilizado. Eficaz contra un amplio espectro de microorganismos. Ecologico y sin residuos toxicos.',
-        features: [
-            'Peroxido de hidrogeno',
-            'Ecologico',
-            'Sin residuos toxicos',
-            'Amplio espectro',
-            'Registro sanitario'
-        ],
-        images: [
-            'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&h=400&fit=crop',
-        ],
-        video: null,
-        prices: { 'galon': 4.46 },
-        codes: { 'galon': '39069' },
-        badge: null
-    },
+
     {
         id: 13,
         name: 'Sanibat D',
         category: 'desinfectantes_rutinarios',
-        description: 'Desinfectante de uso rutinario para superficies y pisos hospitalarios.',
-        longDescription: 'Desinfectante de uso rutinario con accion bactericida y fungicida. Formulado para la limpieza y desinfeccion diaria de superficies y pisos hospitalarios.',
+        description: 'Versión reforzada de desinfectante con amonios cuaternarios, diseñada para mayor persistencia en superficies. Proporciona protección prolongada contra microorganismos en áreas hospitalarias críticas.',
+        longDescription: 'Versión reforzada de desinfectante con amonios cuaternarios, diseñada para mayor persistencia en superficies. Proporciona protección prolongada contra microorganismos en áreas hospitalarias críticas.',
         features: [
-            'Uso rutinario',
-            'Bactericida y fungicida',
-            'Facil aplicacion',
-            'Economico',
-            'Registro sanitario'
+            'Mayor poder desinfectante',
+            'Acción prolongada',
+            'Uso en zonas críticas',
         ],
         images: [
-
+            'img/sanibat1l.webp',
             'img/35969 SANIBAT GLBR.webp',
             'img/36971 SANIBAT 20L.webp',   // reutiliza imagen sanibat
             
@@ -331,17 +290,15 @@ const products = [
         id: 16,
         name: 'Desengrasante Biodegradable',
         category: 'lavanderia',
-        description: 'Desengrasante biodegradable para ropa con manchas de grasa y aceite.',
-        longDescription: 'Desengrasante biodegradable de alta eficacia para el pretratamiento de ropa hospitalaria con manchas de grasa, aceite y otros contaminantes grasos.',
+        description: 'Detergente desengrasante neutro formulado para la limpieza diaria de superficies y textiles. Remueve suciedad ligera y grasa sin dañar materiales ni alterar colores. Su fórmula balanceada permite uso frecuente en entornos hospitalarios bajo protocolos de limpieza concurrente.',
+        longDescription: 'Detergente desengrasante neutro formulado para la limpieza diaria de superficies y textiles. Remueve suciedad ligera y grasa sin dañar materiales ni alterar colores. Su fórmula balanceada permite uso frecuente en entornos hospitalarios bajo protocolos de limpieza concurrente.',
         features: [
-            'Biodegradable',
-            'Alta eficacia desengrasante',
-            'Pretratamiento ropa',
-            'pH neutro',
-            'Concentrado'
+            'pH neutro seguro',
+            'Remueve grasa ligera',
+            'Apto para uso continuo',
         ],
         images: [
-
+            'img/deter100bio.webp',   
             'img/47623 DETERBIO GBR.webp',
             'img/47103 DETERBIO 20L.webp',
         ],
@@ -364,7 +321,7 @@ const products = [
             'Para uso en lavanderia industrial'
         ],
         images: [
-
+            'img/deter100cl1.webp',   
             'img/35823 DET CLORADO GBR.webp',
             'img/35824 DET CLORADO 20L.webp',
             
@@ -388,8 +345,8 @@ const products = [
             'Alta eficiencia'
         ],
         images: [
-            'img/deter100pro.webp', 
-            'img/deter100porg.webp',
+            'img/Deter100pro.webp', 
+            'img/Deter100porg.webp',
              'img/deter100proc.webp',
         ],
         video: null,
@@ -413,7 +370,7 @@ const products = [
         images: [
 
             'img/40283 TAHOR BLEAN GBC.webp', 
-            'img/40286 TAHOR BLEACH 20L.webp',  // caneca 20L
+            'img/40286 TAHOR BLEACH 20L.webp', 
               // galon
         ],
         video: null,
@@ -458,7 +415,7 @@ const products = [
             'Alta eficacia'
         ],
         images: [
-            'img/triturbo1.webp',
+            'img/triturbo.webp',
         ],
         video: null,
         prices: { '500ml': 3, '1L': 5 },
@@ -479,7 +436,7 @@ const products = [
             'Economico'
         ],
         images: [
-            '',  // referencia polvo
+            '',  
             '',
         ],
         video: null,
@@ -501,8 +458,8 @@ const products = [
             'Alta eficiencia'
         ],
         images: [
-            '',  // caneca textil aloe
-            '',        // galon aloe
+            '', 
+            '',   
         ],
         video: null,
         prices: { '1L': 3.05, 'galon': 9.13 },
@@ -515,17 +472,16 @@ const products = [
         id: 24,
         name: 'JDM',
         category: 'higiene_de_manos',
-        description: 'Jabon desinfectante de manos para uso hospitalario. Formula suave y antibacterial.',
-        longDescription: 'Jabon desinfectante de manos especialmente formulado para uso hospitalario. Elimina bacterias y virus manteniendo la piel hidratada.',
+        description: 'Jabón antiséptico formulado para eliminar bacterias de forma efectiva en manos. Ideal para uso frecuente en entornos hospitalarios, garantizando higiene y seguridad en cada lavado.',
+        longDescription: 'Jabón antiséptico formulado para eliminar bacterias de forma efectiva en manos. Ideal para uso frecuente en entornos hospitalarios, garantizando higiene y seguridad en cada lavado.',
         features: [
-            'Antibacterial',
-            'Suave con la piel',
-            'Hidratante',
-            'Sin olor fuerte',
-            'Para uso frecuente'
+            'Acción antibacteriana',
+            'Uso frecuente seguro',
+            'Ideal para protocolos clínicos',
         ],
         images: [
-            'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop',
+            'img/jabonliquidogl.webp',
+            'img/jabonliquidojdmc.webp', 
         ],
         video: null,
         prices: { '1L': 1.53, 'galon': 4.13 },
@@ -536,17 +492,17 @@ const products = [
         id: 25,
         name: 'Alcohol Antiseptico 70%',
         category: 'higiene_de_manos',
-        description: 'Alcohol antiseptico al 70% para desinfeccion de manos y superficies.',
-        longDescription: 'Alcohol antiseptico al 70% de etanol para desinfeccion rapida de manos y superficies. Accion virucida y bactericida comprobada.',
+        description: 'Solución desinfectante de rápida acción que elimina bacterias y virus sin necesidad de enjuague. Ideal para uso hospitalario y personal.',
+        longDescription: 'Solución desinfectante de rápida acción que elimina bacterias y virus sin necesidad de enjuague. Ideal para uso hospitalario y personal.',
         features: [
-            'Alcohol 70% etanol',
-            'Virucida y bactericida',
-            'Secado rapido',
-            'Sin residuos',
-            'Uso en manos y superficies'
+            'Acción inmediata',
+            'Sin enjuague',
+            'Alta eficacia',
         ],
         images: [
-            'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop',
+            'img/alcohol1l.webp',  
+            'img/alcoholgl.webp',  
+            'img/alcoantcane.webp'  
         ],
         video: null,
         prices: { '1L': 2.5, 'galon': 7.7, 'caneca': 35.8 },
@@ -557,17 +513,17 @@ const products = [
         id: 26,
         name: 'Alcohol Gel 70%',
         category: 'higiene_de_manos',
-        description: 'Gel antibacterial con 70% de alcohol para higiene de manos sin agua.',
-        longDescription: 'Gel antibacterial con 70% de alcohol etilico, ideal para la higiene de manos en situaciones donde no hay acceso a agua y jabon. Secado rapido y no pegajoso.',
+        description: 'Gel antiséptico práctico para desinfección de manos en cualquier momento. Su fórmula permite rápida absorción y acción efectiva contra microorganismos.',
+        longDescription: 'Gel antiséptico práctico para desinfección de manos en cualquier momento. Su fórmula permite rápida absorción y acción efectiva contra microorganismos.',
         features: [
-            'Alcohol 70%',
-            'Secado rapido',
-            'Humectantes incluidos',
-            'No pegajoso',
-            'Portable'
+            'Portátil',
+            'Secado rápido',
+            'Uso práctico',
         ],
         images: [
-            'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop',
+            'img/gl1l.webp',  
+            'img/gelgl.webp', 
+            'img/gelc.webp'  
         ],
         video: null,
         prices: { '1L': 2.99, 'galon': 9.75, 'caneca': 45 },
@@ -578,14 +534,12 @@ const products = [
         id: 27,
         name: 'Dioxigen Agua Oxigenada',
         category: 'higiene_de_manos',
-        description: 'Agua oxigenada al 3% para antisepsia de heridas y desinfeccion de manos.',
-        longDescription: 'Agua oxigenada (peroxido de hidrogeno) al 3% para antisepsia de heridas menores y desinfeccion complementaria de manos. De uso medico controlado.',
+        description: 'Solución antiséptica de uso básico para limpieza de heridas y superficies. Actúa como desinfectante suave en protocolos hospitalarios.',
+        longDescription: 'Solución antiséptica de uso básico para limpieza de heridas y superficies. Actúa como desinfectante suave en protocolos hospitalarios.',
         features: [
-            'Peroxido de hidrogeno 3%',
-            'Antiseptico de heridas',
-            'Ecologico',
-            'Sin residuos toxicos',
-            'Uso medico'
+            'Acción antiséptica',
+            'Uso básico seguro',
+            'Aplicación versátil',
         ],
         images: [
             'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop',
@@ -656,6 +610,9 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
     updateCartUI();
     initEventListeners();
+
+        document.getElementById('checkoutForm').addEventListener('submit', handleCheckout);
+
 });
 
 function initEventListeners() {
@@ -1136,7 +1093,7 @@ function handleCheckout(e) {
     };
 
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const iva = Math.round(subtotal * IVA_RATE);
+    const iva = subtotal * IVA_RATE;
     const total = subtotal + iva;
 
     let message = ` *NUEVO PEDIDO - TAHOR CLEAN SECTOR HOSPITALARIO*\n\n`;
@@ -1155,8 +1112,7 @@ function handleCheckout(e) {
         const itemTotal = item.price * item.quantity;
         const itemTotalWithIva = Math.round(itemTotal * (1 + IVA_RATE));
         const productCode = product.codes[item.size];
-        message += `- [${productCode}] ${product.name} (${sizeLabels[item.size] || item.size}) x${item.quantity} = $${formatPrice(itemTotalWithIva)} (IVA ${Math.round(IVA_RATE * 100)}% incluido)\n`;
-    });
+       message += `- [${productCode}] ${product.name} (${sizeLabels[item.size] || item.size}) x${item.quantity} = $${formatPrice(itemTotal)}\n`;    });
 
     message += `\n*RESUMEN*\n`;
     message += `Subtotal: $${formatPrice(subtotal)}\n`;
@@ -1165,7 +1121,7 @@ function handleCheckout(e) {
     message += `Gracias por su pedido! `;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/+593958812843?text=${encodedMessage}`;
+const whatsappUrl = `https://wa.me/593958812843?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
 
     cart = [];
