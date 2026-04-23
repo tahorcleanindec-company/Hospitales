@@ -388,7 +388,9 @@ const products = [
             'Alta eficiencia'
         ],
         images: [
-            '', // similar linea textil
+            'img/deter100pro.webp', 
+            'img/deter100porg.webp',
+             'img/deter100proc.webp',
         ],
         video: null,
         prices: { '1L': 2.6, 'galon': 8.69, 'caneca': 39.2 },
@@ -433,7 +435,9 @@ const products = [
             'Uso en frio'
         ],
         images: [
-            '',  // referencia oxigenado
+            'img/dioxigenpro1.webp',
+            "img/dioxigen gl.webp", 
+            "img/Dioxigenpro.webp",
         ],
         video: null,
         prices: { '1L': 2.4, 'galon': 7.18, 'caneca': 34.7 },
@@ -454,7 +458,7 @@ const products = [
             'Alta eficacia'
         ],
         images: [
-            '',
+            'img/triturbo.webp',
         ],
         video: null,
         prices: { '500ml': 3, '1L': 5 },
@@ -521,7 +525,7 @@ const products = [
             'Para uso frecuente'
         ],
         images: [
-            'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop',
+            'img/jabonliquidogl.webp',  // galon
         ],
         video: null,
         prices: { '1L': 1.53, 'galon': 4.13 },
@@ -1059,7 +1063,7 @@ function updateCartUI() {
     }).join('');
 
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const iva = Math.round(subtotal * IVA_RATE);
+    const iva = subtotal * IVA_RATE;
     const total = subtotal + iva;
 
     cartSummary.innerHTML = `
@@ -1184,3 +1188,31 @@ window.updateQuantity = updateQuantity;
 window.removeFromCart = removeFromCart;
 window.openCheckoutModal = openCheckoutModal;
 window.filterByCategory = filterByCategory;
+
+document.addEventListener('click', (e) => {
+    if (e.target.closest('#closeProductModal')) {
+        productModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+document.addEventListener('click', (e) => {
+    if (e.target.closest('#closeCart')) {
+        closeCartDrawer();
+    }
+});
+productsGrid.addEventListener('click', (e) => {
+    const card = e.target.closest('.product-card');
+    if (!card) return;
+
+    const id = card.dataset.id;
+    openProductModal(parseInt(id));
+});
+
+const state = {
+    cart: [],
+    currentSlide: 0,
+    sliderInterval: null,
+    selectedSize: '1L',
+    selectedPrice: 0
+};
+
