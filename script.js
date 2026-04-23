@@ -458,7 +458,7 @@ const products = [
             'Alta eficacia'
         ],
         images: [
-            'img/triturbo.webp',
+            'img/triturbo1.webp',
         ],
         video: null,
         prices: { '500ml': 3, '1L': 5 },
@@ -525,7 +525,7 @@ const products = [
             'Para uso frecuente'
         ],
         images: [
-            'img/jabonliquidogl.webp',  // galon
+            'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop',
         ],
         video: null,
         prices: { '1L': 1.53, 'galon': 4.13 },
@@ -1066,6 +1066,7 @@ function updateCartUI() {
     const iva = subtotal * IVA_RATE;
     const total = subtotal + iva;
 
+
     cartSummary.innerHTML = `
         <div class="cart-summary-row"><span>Subtotal</span><span>$${formatPrice(subtotal)}</span></div>
         <div class="cart-summary-row"><span>IVA (15%)</span><span>$${formatPrice(iva)}</span></div>
@@ -1175,8 +1176,12 @@ function handleCheckout(e) {
 }
 
 function formatPrice(price) {
-    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    return Number(price).toLocaleString('es-EC', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    });
 }
+
 
 window.openProductModal = openProductModal;
 window.changeGalleryImage = changeGalleryImage;
@@ -1189,30 +1194,28 @@ window.removeFromCart = removeFromCart;
 window.openCheckoutModal = openCheckoutModal;
 window.filterByCategory = filterByCategory;
 
+if (cartBtn) cartBtn.addEventListener('click', openCart);
+if (closeCart) closeCart.addEventListener('click', closeCartDrawer);
+if (cartOverlay) cartOverlay.addEventListener('click', closeCartDrawer);
+
+productModal.addEventListener('click', (e) => {
+    if (e.target === productModal) closeProductModalFn();
+});
+
+function closeProductModalFn() {
+    productModal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
 document.addEventListener('click', (e) => {
-    if (e.target.closest('#closeProductModal')) {
-        productModal.classList.remove('active');
-        document.body.style.overflow = '';
+    if (e.target.closest('.modal-close')) {
+        closeProductModalFn();
     }
 });
-document.addEventListener('click', (e) => {
-    if (e.target.closest('#closeCart')) {
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeProductModalFn();
         closeCartDrawer();
     }
 });
-productsGrid.addEventListener('click', (e) => {
-    const card = e.target.closest('.product-card');
-    if (!card) return;
-
-    const id = card.dataset.id;
-    openProductModal(parseInt(id));
-});
-
-const state = {
-    cart: [],
-    currentSlide: 0,
-    sliderInterval: null,
-    selectedSize: '1L',
-    selectedPrice: 0
-};
-
