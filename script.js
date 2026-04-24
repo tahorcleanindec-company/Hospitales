@@ -562,6 +562,48 @@ const products = [
         codes: { '1L': '40072', 'galon': '40075', 'caneca': '41066' },
         badge: null
     },
+    {
+        id: 29,
+        name: 'Suavizante con aroma',
+        category: 'lavanderia',
+        description: 'Suavizante textil diseñado para brindar mayor confort y frescura a prendas hospitalarias. Reduce la rigidez de las telas, facilita el planchado y deja un aroma agradable, mejorando la experiencia del usuario sin comprometer la limpieza.',
+        longDescription: 'Suavizante textil diseñado para brindar mayor confort y frescura a prendas hospitalarias. Reduce la rigidez de las telas, facilita el planchado y deja un aroma agradable, mejorando la experiencia del usuario sin comprometer la limpieza.',
+        features: [
+            'Contiene agentes suavizantes de alta eficiencia',
+            'Fragancia agradable y duradera ',
+            'Reduce fricción en fibras textiles ',
+        ],
+        images: [
+            'img/.webp',  
+            'img/.webp', 
+            'img/.webp'  
+        ],
+        video: null,
+        prices: { '1L': 0.00, 'galon': 0.00, 'caneca': 0.00 },
+        codes: { '1L': '0.00', 'galon': '0.00', 'caneca': '0.00' },
+        badge: null
+    },
+        {
+        id: 30,
+        name: 'Neutralizante ácido',
+        category: 'lavanderia',
+        description: 'Neutralizante ácido formulado para corregir el pH residual en textiles después del proceso de lavado. Su combinación de ácidos orgánicos y agentes quelantes ayuda a eliminar residuos alcalinos, mejorando la suavidad, la seguridad y la durabilidad de las prendas hospitalarias.',
+        longDescription: 'Neutralizante ácido formulado para corregir el pH residual en textiles después del proceso de lavado. Su combinación de ácidos orgánicos y agentes quelantes ayuda a eliminar residuos alcalinos, mejorando la suavidad, la seguridad y la durabilidad de las prendas hospitalarias.',
+        features: [
+            'Contiene ácido acético y ácido cítrico (neutralización efectiva)',
+            'Incorpora agente quelante (EDTA) para control de minerales ',
+            'Baja concentración de tensioactivo para mejor distribución  ',
+        ],
+        images: [
+            'img/.webp',  
+            'img/.webp', 
+            'img/.webp'  
+        ],
+        video: null,
+        prices: { '1L': 0.00, 'galon': 0.00, 'caneca': 0.00 },
+        codes: { '1L': '0.00', 'galon': '0.00', 'caneca': '0.00' },
+        badge: null
+    },
 ];
 
 
