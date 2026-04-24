@@ -24,7 +24,7 @@ const products = [
             'img/58586 DETEROXI 20L.webp',  
         ],
         video: null,
-        prices: { '1L': 2.3, 'galon': 8.93, 'caneca': 32.2 },
+        prices: { '1L': 2.30, 'galon': 8.93, 'caneca': 32.20 },
         codes: { '1L': '59627', 'galon': '59628', 'caneca': '58586' },
         badge: null
     },
@@ -45,7 +45,7 @@ const products = [
             'img/47623 DETERBIO GBR.webp',   
         ],
         video: null,
-        prices: { '1L': 2.3, 'galon': 8.9, 'caneca': 32.8 },
+        prices: { '1L': 2.30, 'galon': 7.99, 'caneca': 35.00 },
         codes: { '1L': '48906', 'galon': '47623', 'caneca': '47103' },
         badge: null
     },
@@ -88,7 +88,7 @@ const products = [
               
         ],
         video: null,
-        prices: { '1L': 2.3, 'galon': 6, 'caneca': 24.3 },
+        prices: { '1L': 2.18, 'galon': 5.70, 'caneca': 24.00 },
         codes: { '1L': '42286', 'galon': '37863', 'caneca': '35824' },
         badge: null
     },
@@ -109,7 +109,7 @@ const products = [
             'img/35658 AC SANITIZANTE 20L.webp',  
         ],
         video: null,
-        prices: { '1L': 3.1, 'galon': 11.4, 'caneca': 49.7 },
+        prices: { '1L': 3.10, 'galon': 11.40, 'caneca': 49.70 },
         codes: { '1L': '35656', 'galon': '35657', 'caneca': '35658' },
         badge: null
     },
@@ -130,7 +130,7 @@ const products = [
             'img/59267 SEGURICLEAN BAÑO 20L (3).webp', 
         ],
         video: null,
-        prices: { '1L': 2.6, 'galon': 8.26, 'caneca': 37.4 },
+        prices: { '1L': 2.60, 'galon': 8.26, 'caneca': 37.40 },
         codes: { '1L': '61046', 'galon': '59212', 'caneca': '59267' },
         badge: null
     },
@@ -151,7 +151,7 @@ const products = [
             'img/46730 OXIQUATS 20L.webp',    // caneca 20L
         ],
         video: null,
-        prices: { '1L': 3.5, 'galon': 11, 'caneca': 45 },
+        prices: { '1L': 3.50, 'galon': 11.00, 'caneca': 45.00 },
         codes: { '1L': '47925', 'galon': '48085', 'caneca': '46730' },
         badge: null
     },
@@ -172,7 +172,7 @@ const products = [
             'img/35658 SANITIZER 20L.webp',   
         ],
         video: null,
-        prices: { '1L': 3.26, 'galon': 10, 'caneca': 39.99 },
+        prices: { '1L': 3.26, 'galon': 10.00, 'caneca': 39.99 },
         codes: { '1L': '35954', 'galon': '35955', 'caneca': '35956' },
         badge: null
     },
@@ -193,7 +193,7 @@ const products = [
             'img/36971 SANIBAT 20L.webp',    
         ],
         video: null,
-        prices: { '1L': 2.5, 'galon': 9, 'caneca': 37 },
+        prices: { '1L': 2.50, 'galon': 9.00, 'caneca': 37.00 },
         codes: { '1L': '35968', 'galon': '45623', 'caneca': '35971' },
         badge: null
     },
@@ -215,7 +215,7 @@ const products = [
        // presentacion
         ],
         video: null,
-        prices: { '1L': 3.5, 'galon': 10, 'caneca': 43 },
+        prices: { '1L': 3.50, 'galon': 10.00, 'caneca': 43.00 },
         codes: { '1L': '45363', 'galon': '41663', 'caneca': '46464' },
         badge: null
     },
@@ -236,7 +236,7 @@ const products = [
             "img/dioxigenpro.webp" // presentacion
         ],
         video: null,
-        prices: { '1L': 2.5, 'galon': 9, 'caneca': 33 },
+        prices: { '1L': 2.50, 'galon': 9.00, 'caneca': 33.00 },
         codes: { '1L': '56568', 'galon': '56567', 'caneca': '59106' },
         badge: null
     },
@@ -277,11 +277,11 @@ const products = [
             'Apto para lavado frecuente de textiles clínicos ',
         ],
         images: [
-            'img/DETER HIPOALARGENICO GBR.webp',  // galon
-            'img/soap.webp',  // caneca 20L
+            'img/DETER HIPOALARGENICO GBR.webp',  
+            'img/soap.webp',  
         ],
         video: null,
-        prices: { 'galon': 3.92, 'caneca': 15.65 },
+        prices: { 'galon': 7.00, 'caneca': 27.00 },
         codes: { 'galon': '50826', 'caneca': '64246' },
         badge: null
     },
@@ -302,7 +302,7 @@ const products = [
             'img/47103 DETERBIO 20L.webp',
         ],
         video: null,
-        prices: { '1L': 2.3, 'galon': 6.8, 'caneca': 32.8 },
+        prices: { '1L': 2.30, 'galon': 6.80, 'caneca': 32.80 },
         codes: { '1L': '48906', 'galon': '47623', 'caneca': '47103' },
         badge: null
     },
@@ -326,7 +326,7 @@ const products = [
             
         ],
         video: null,
-        prices: { '1L': 1.74, 'galon': 4.13, 'caneca': 20.5 },
+        prices: { '1L': 1.74, 'galon': 4.13, 'caneca': 20.50 },
         codes: { '1L': '42286', 'galon': '37863', 'caneca': '35824' },
         badge: null
     },
@@ -349,7 +349,7 @@ const products = [
              'img/deter100proc.webp',
         ],
         video: null,
-        prices: { '1L': 2.6, 'galon': 8.69, 'caneca': 39.2 },
+        prices: { '1L': 3.00, 'galon': 9.00, 'caneca': 41.00 },
         codes: { '1L': '45088', 'galon': '54167', 'caneca': '592283' },
         badge: null
     },
@@ -369,7 +369,7 @@ const products = [
             'img/40286 TAHOR BLEACH 20L.webp', 
         ],
         video: null,
-        prices: { '1L': 4.35, 'galon': 13.1, 'caneca': 52 },
+        prices: { '1L': 4.35, 'galon': 13.10, 'caneca': 52.00 },
         codes: { '1L': '40284', 'galon': '40283', 'caneca': '40286' },
         badge: null
     },
@@ -392,7 +392,7 @@ const products = [
             "img/Dioxigenpro.webp",
         ],
         video: null,
-        prices: { '1L': 2.4, 'galon': 7.18, 'caneca': 34.7 },
+        prices: { '1L': 3.00, 'galon': 10.00, 'caneca': 39.00 },
         codes: { '1L': '56226', 'galon': '52027', 'caneca': '56786' },
         badge: null
     },
@@ -448,21 +448,17 @@ const products = [
             'Compatible con procesos de lavado hospitalario',
         ],
         images: [
-            'img/detergente aloe.webp', 
-            'img/detergente baby.webp',
-            'img/detergente floral.webp',
-            'img/detergente manzana.webp',
-            'img/detergentefrsh gl.webp',
+            '', 
+        
 
 
         ],
         video: null,
-        prices: { '1L': 3.05, 'galon': 9.13 },
-        codes: { '1L': '52186', 'galon': '37456' },
+        prices: { '1L': 3.05, 'galon': 11.00, 'caneca': 43.00 },
+        codes: { '1L': '52186', 'galon': '37456', 'caneca': '' },
         badge: null
     },
 
-    // ── HIGIENE DE MANOS ────────────────────────────────────────────────────
     {
         id: 24,
         name: 'JDM',
@@ -480,7 +476,7 @@ const products = [
             'img/jabonliquidojdmc.webp', 
         ],
         video: null,
-        prices: { '1L': 2.17, 'galon': 6.19, 'caneca': 27 },
+        prices: { '1L': 2.17, 'galon': 6.19, 'caneca': 27.00 },
         codes: { '1L': '35888', 'galon': '35891', 'caneca': '35982' },
         badge: null
     },
@@ -522,7 +518,7 @@ const products = [
             'img/gelc.webp'  
         ],
         video: null,
-        prices: { '1L': 2.99, 'galon': 9.75, 'caneca': 45 },
+        prices: { '1L': 2.99, 'galon': 9.75, 'caneca': 45.00 },
         codes: { '1L': '40072', 'galon': '40075', 'caneca': '41066' },
         badge: null
     },
@@ -543,6 +539,27 @@ const products = [
         video: null,
         prices: { 'galon': 2.83 },
         codes: { 'galon': '46705' },
+        badge: null
+    },
+      {
+        id: 28,
+        name: 'Detergente Loquido con Aroma',
+        category: 'lavanderia',
+        description: 'Detergente líquido formulado para la limpieza eficiente de textiles en entornos hospitalarios. Combina poder de remoción de suciedad con un aroma controlado, mejorando la presentación de prendas sin interferir con los estándares de higiene institucional.',
+        longDescription: 'Detergente líquido formulado para la limpieza eficiente de textiles en entornos hospitalarios. Combina poder de remoción de suciedad con un aroma controlado, mejorando la presentación de prendas sin interferir con los estándares de higiene institucional.',
+        features: [
+            'Alta capacidad de limpieza en ropa hospitalaria',
+            'Fragancia controlada (no invasiva',
+            'Compatible con procesos manuales y automáticos',
+        ],
+        images: [
+            'img/.webp',  
+            'img/.webp', 
+            'img/.webp'  
+        ],
+        video: null,
+        prices: { '1L': 2.00, 'galon': 5.00, 'caneca': 25.00 },
+        codes: { '1L': '40072', 'galon': '40075', 'caneca': '41066' },
         badge: null
     },
 ];
