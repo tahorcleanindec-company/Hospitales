@@ -471,7 +471,7 @@ const products = [
             'Ideal para protocolos clínicos',
         ],
         images: [
-            'img/.webp',
+            'img/jdml1.webp',
             'img/jabonliquidogl.webp',
             'img/jabonliquidojdmc.webp', 
         ],
