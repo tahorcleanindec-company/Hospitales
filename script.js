@@ -574,7 +574,7 @@ const products = [
             'Reduce fricción en fibras textiles ',
         ],
         images: [
-            'img/45002 SUAVIZANTE BABY GBR.webp',  
+            'img/439908 SUAVIZANTE BABY GBR.webp',  
             'img/45002 SUAVIZANTE ARMONÍA GBR.webp', 
             'img/49326 DETERGENTE ALOE GLBR.webp'  
         ],
