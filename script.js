@@ -344,9 +344,9 @@ const products = [
             'Alta eficiencia'
         ],
         images: [
-            'img/Deter100pro.webp', 
+            'img/deter100porg.webp', 
             'img/Deter100porg.webp',
-             'img/deter100proc.webp',
+             'img/Deter100proc.webp',
         ],
         video: null,
         prices: { '1L': 3.00, 'galon': 9.00, 'caneca': 41.00 },
