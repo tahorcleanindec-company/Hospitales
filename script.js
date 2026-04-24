@@ -448,8 +448,13 @@ const products = [
             'Compatible con procesos de lavado hospitalario',
         ],
         images: [
-            '', 
-            '',   
+            'img/detergente aloe.webp', 
+            'img/detergente baby.webp',
+            'img/detergente floral.webp',
+            'img/detergente manzana.webp',
+            'img/detergentefrsh gl.webp',
+
+
         ],
         video: null,
         prices: { '1L': 3.05, 'galon': 9.13 },
