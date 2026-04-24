@@ -26,7 +26,7 @@ const products = [
         video: null,
         prices: { '1L': 2.3, 'galon': 8.93, 'caneca': 32.2 },
         codes: { '1L': '59627', 'galon': '59628', 'caneca': '58586' },
-        badge: 'new'
+        badge: null
     },
     {
         id: 2,
@@ -68,7 +68,7 @@ const products = [
         video: null,
         prices: { '1L': 2.6, 'galon': 9.57, 'caneca': 36.46 },
         codes: { '1L': '50367', 'galon': '35920', 'caneca': '35922' },
-        badge: 'sale'
+        badge: null
     },
     {
         id: 4,
@@ -111,7 +111,7 @@ const products = [
         video: null,
         prices: { '1L': 3.1, 'galon': 11.4, 'caneca': 49.7 },
         codes: { '1L': '35656', 'galon': '35657', 'caneca': '35658' },
-        badge: 'new'
+        badge: null
     },
     {
         id: 6,
@@ -153,7 +153,7 @@ const products = [
         video: null,
         prices: { '1L': 3.5, 'galon': 11, 'caneca': 45 },
         codes: { '1L': '47925', 'galon': '48085', 'caneca': '46730' },
-        badge: 'sale'
+        badge: null
     },
     {
         id: 8,
@@ -167,7 +167,7 @@ const products = [
             'Elimina microorganismos resistentes',
         ],
         images: [
-            'img/.webp',   // galon
+            'img/sanitizer tc.webp',   // galon
             'img/35657 SANITIZER TC.webp',
             'img/35658 SANITIZER 20L.webp',   
         ],
@@ -255,7 +255,7 @@ const products = [
         images: [
             'img/sanibat1l.webp',
             'img/35969 SANIBAT GLBR.webp',
-            'img/36971 SANIBAT 20L.webp',   // reutiliza imagen sanibat
+            'img/36971 SANIBAT 20L.webp',   
             
         ],
         video: null,
@@ -269,17 +269,16 @@ const products = [
         id: 14,
         name: 'Detergente Liquido Hipoalergenico',
         category: 'lavanderia',
-        description: 'Detergente liquido hipoalergenico para ropa hospitalaria delicada.',
-        longDescription: 'Detergente liquido hipoalergenico especialmente formulado para el lavado de ropa hospitalaria delicada. Sin fragancia y con pH neutro.',
+        description: 'Detergente textil de pH neutro, formulado para lavado seguro de prendas hospitalarias. Su bajo nivel de fragancia y composición suave lo hacen ideal para contacto frecuente con pacientes, garantizando limpieza sin irritación ni residuos agresivos.',
+        longDescription: 'Detergente textil de pH neutro, formulado para lavado seguro de prendas hospitalarias. Su bajo nivel de fragancia y composición suave lo hacen ideal para contacto frecuente con pacientes, garantizando limpieza sin irritación ni residuos agresivos.',
         features: [
-            'Hipoalergenico',
-            'pH neutro',
-            'Sin fragancia',
-            'Biodegradable',
-            'Alta eficiencia'
+            'pH neutro (no agresivo) ',
+            'Bajo aroma (no invasivo)',
+            'Apto para lavado frecuente de textiles clínicos ',
         ],
         images: [
             'img/DETER HIPOALARGENICO GBR.webp',  // galon
+            'img/soap.webp',  // caneca 20L
         ],
         video: null,
         prices: { 'galon': 3.92, 'caneca': 15.65 },
@@ -358,20 +357,16 @@ const products = [
         id: 19,
         name: 'Tahor Bleach',
         category: 'lavanderia',
-        description: 'Blanqueador institucional para ropa blanca hospitalaria de alto rendimiento.',
-        longDescription: 'Blanqueador institucional de alta concentracion para ropa blanca hospitalaria. Elimina manchas, blanquea y desinfecta en un solo proceso.',
+        description: 'Blanqueador técnico, diseñado para restaurar el color blanco en textiles hospitalarios y eliminar manchas de óxido y residuos minerales. Mejora la apariencia y cumple con estándares de higiene en lavandería institucional.',
+        longDescription: 'Blanqueador técnico, diseñado para restaurar el color blanco en textiles hospitalarios y eliminar manchas de óxido y residuos minerales. Mejora la apariencia y cumple con estándares de higiene en lavandería institucional.',
         features: [
-            'Blanqueador de alto nivel',
-            'Elimina manchas',
-            'Desinfecta',
-            'Alta concentracion',
-            'Economico'
+            'Alta acción blanqueadora',
+            'Efectivo contra óxido y manchas minerales ',
         ],
         images: [
-
+            'img/tahorbleach.webp', 
             'img/40283 TAHOR BLEAN GBC.webp', 
             'img/40286 TAHOR BLEACH 20L.webp', 
-              // galon
         ],
         video: null,
         prices: { '1L': 4.35, 'galon': 13.1, 'caneca': 52 },
@@ -405,14 +400,12 @@ const products = [
         id: 21,
         name: 'Tri Turbo (Percarbonato)',
         category: 'lavanderia',
-        description: 'Percarbonato de sodio para blanqueo y desinfeccion de ropa hospitalaria.',
-        longDescription: 'Percarbonato de sodio de alta pureza para blanqueo y desinfeccion de ropa hospitalaria. Ecologico y biodegradable.',
+        description: 'Detergente avanzado con percarbonato , diseñado para remover manchas orgánicas en textiles hospitalarios. Actúa sobre sangre, fluidos y residuos biológicos, proporcionando limpieza profunda sin necesidad de cloro agresivo.',
+        longDescription: 'Detergente avanzado con percarbonato , diseñado para remover manchas orgánicas en textiles hospitalarios. Actúa sobre sangre, fluidos y residuos biológicos, proporcionando limpieza profunda sin necesidad de cloro agresivo.',
         features: [
-            'Percarbonato de sodio',
-            'Ecologico',
-            'Biodegradable',
-            'Sin cloro',
-            'Alta eficacia'
+            'Libera oxígeno activo (percarbonato)',
+            'Contiene componentes especializados',
+            'Alta capacidad de limpieza profunda ',
         ],
         images: [
             'img/triturbo.webp',
@@ -436,8 +429,7 @@ const products = [
             'Economico'
         ],
         images: [
-            '',  
-            '',
+            'img/detergenplvo.webp',  
         ],
         video: null,
         prices: { '500ml': 0.89, '1L': 1.69 },
@@ -448,14 +440,12 @@ const products = [
         id: 23,
         name: 'Detergente Textil Enzimatico',
         category: 'lavanderia',
-        description: 'Detergente textil enzimatico para ropa hospitalaria con manchas organicas difíciles.',
-        longDescription: 'Detergente textil enzimatico de triple accion para ropa hospitalaria con manchas organicas difíciles. Contiene proteasas, lipasas y amilasas.',
+        description: 'Detergente textil enzimático formulado para eliminar manchas de origen biológico en lavandería hospitalaria. Actúa sobre sangre, fluidos y residuos orgánicos, facilitando su remoción sin dañar las fibras, mejorando la higiene y el rendimiento del lavado.',
+        longDescription: 'Detergente textil enzimático formulado para eliminar manchas de origen biológico en lavandería hospitalaria. Actúa sobre sangre, fluidos y residuos orgánicos, facilitando su remoción sin dañar las fibras, mejorando la higiene y el rendimiento del lavado.',
         features: [
-            'Triple accion enzimatica',
-            'Elimina manchas organicas',
-            'Compatible con todas las fibras',
-            'Biodegradable',
-            'Alta eficiencia'
+            'Contiene enzimas especializadas (proteasas, amilasas, etc.)',
+            'Alta efectividad sobre materia orgánica',
+            'Compatible con procesos de lavado hospitalario',
         ],
         images: [
             '', 
@@ -542,7 +532,7 @@ const products = [
             'Aplicación versátil',
         ],
         images: [
-            'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&h=400&fit=crop',
+            'img/dioxigenoxi.webp',
         ],
         video: null,
         prices: { 'galon': 2.83 },
@@ -551,9 +541,6 @@ const products = [
     },
 ];
 
-// ─────────────────────────────────────────────────────────────────────────────
-// El resto del archivo permanece IGUAL que el original
-// ─────────────────────────────────────────────────────────────────────────────
 
 const sizeLabels = {
     '500ml': '500 ml',
