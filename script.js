@@ -19,7 +19,7 @@ const products = [
             'Aroma agradable',
         ],
         images: [
-            'img/Deteroxy1.webp',  // galon
+            'img/Deteroxy1.webp',  
             'img/59628 DETEROXI GLBR.webp',   
             'img/58586 DETEROXI 20L.webp',  
         ],
@@ -40,9 +40,9 @@ const products = [
             'Apto para uso continuo',
         ],
         images: [
-            'img/deter100bio.webp',   // caneca 20L
-            'img/47103 DETERBIO 20L.webp',   // caneca 20L
-            'img/47623 DETERBIO GBR.webp',   // galon
+            'img/deter100bio.webp',   
+            'img/47103 DETERBIO 20L.webp',   
+            'img/47623 DETERBIO GBR.webp',   
         ],
         video: null,
         prices: { '1L': 2.3, 'galon': 8.9, 'caneca': 32.8 },
@@ -61,9 +61,9 @@ const products = [
             'Ideal para textiles y superficies.',
         ],
         images: [
-            'img/tahorwhas1l.webp',  // galon
-            'img/tahorwashgl.webp',  // caneca 20L
-            'img/35922 TAHOR WASH 20L.webp',  // caneca 20L
+            'img/tahorwhas1l.webp',  
+            'img/tahorwashgl.webp',  
+            'img/35922 TAHOR WASH 20L.webp',  
         ],
         video: null,
         prices: { '1L': 2.6, 'galon': 9.57, 'caneca': 36.46 },
@@ -84,8 +84,8 @@ const products = [
         images: [
             'img/deter100cl1.webp',
             'img/35823 DET CLORADO GBR.webp',
-            'img/35824 DET CLORADO 20L.webp',  // caneca 20L
-              // galon
+            'img/35824 DET CLORADO 20L.webp',  
+              
         ],
         video: null,
         prices: { '1L': 2.3, 'galon': 6, 'caneca': 24.3 },
@@ -104,9 +104,9 @@ const products = [
             'Fórmula ácido + amonios',
         ],
         images: [
-            'img/acidosanitizante1l.webp', // galon
-            'img/35857 ACIDO ZANITIZANTE GLB.webp', // galon
-            'img/35658 AC SANITIZANTE 20L.webp',  // caneca 20L
+            'img/acidosanitizante1l.webp', 
+            'img/35857 ACIDO ZANITIZANTE GLB.webp', 
+            'img/35658 AC SANITIZANTE 20L.webp',  
         ],
         video: null,
         prices: { '1L': 3.1, 'galon': 11.4, 'caneca': 49.7 },
@@ -125,9 +125,9 @@ const products = [
             'Aroma agradable',
         ],
         images: [
-            'img/seguriclean1l.webp',         // 1L     // galon  — mismo codigo, imagen galon
-            'img/59212 SEGURICELAN BAÑO.webp',         // 1L     // galon  — mismo codigo, imagen galon
-            'img/59267 SEGURICLEAN BAÑO 20L (3).webp', // caneca 20L
+            'img/seguriclean1l.webp',         
+            'img/59212 SEGURICELAN BAÑO.webp',         
+            'img/59267 SEGURICLEAN BAÑO 20L (3).webp', 
         ],
         video: null,
         prices: { '1L': 2.6, 'galon': 8.26, 'caneca': 37.4 },
