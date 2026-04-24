@@ -475,12 +475,13 @@ const products = [
             'Ideal para protocolos clínicos',
         ],
         images: [
+            'img/.webp',
             'img/jabonliquidogl.webp',
             'img/jabonliquidojdmc.webp', 
         ],
         video: null,
-        prices: { '1L': 1.53, 'galon': 4.13 },
-        codes: { '1L': '35888', 'galon': '35891' },
+        prices: { '1L': 2.17, 'galon': 6.19, 'caneca': 27 },
+        codes: { '1L': '35888', 'galon': '35891', 'caneca': '35982' },
         badge: null
     },
     {
@@ -550,8 +551,8 @@ const products = [
 const sizeLabels = {
     '500ml': '500 ml',
     '1L': '1 Litro',
-    'galon': 'Galon (3.8L)',
-    'caneca': 'Caneca (20L)'
+    'galon': 'Galon ',
+    'caneca': 'Caneca '
 };
 
 const sizeIcons = {
