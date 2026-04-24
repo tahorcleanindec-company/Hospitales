@@ -574,12 +574,12 @@ const products = [
             'Reduce fricción en fibras textiles ',
         ],
         images: [
-            'img/.webp',  
-            'img/.webp', 
-            'img/.webp'  
+            'img/45002 SUAVIZANTE BABY GBR.webp',  
+            'img/45002 SUAVIZANTE ARMONÍA GBR.webp', 
+            'img/49326 DETERGENTE ALOE GLBR.webp'  
         ],
         video: null,
-        prices: { '1L': 0.00, 'galon': 0.00, 'caneca': 0.00 },
+        prices: { '1L': 0.00, 'galon': 6.50, 'caneca': 0.00 },
         codes: { '1L': '0.00', 'galon': '0.00', 'caneca': '0.00' },
         badge: null
     },
