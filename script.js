@@ -344,8 +344,8 @@ const products = [
             'Alta eficiencia'
         ],
         images: [
+           'img/Deter100pro',
             'img/deter100porg.webp', 
-            'img/Deter100porg.webp',
              'img/Deter100proc.webp',
         ],
         video: null,
