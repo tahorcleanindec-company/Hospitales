@@ -580,7 +580,7 @@ const products = [
         ],
         images: [
             'img/45002 SUAVIZANTE ARMONÍA GBR.webp', 
-            'img/49326 DETERGENTE ALOE GLBR.webp'  
+            'img/53171 SUAVIZANTE CIELO AZUL GLBR.webp',
         ],
         video: null,
         prices: { '1L': 0.00, 'galon': 6.50, 'caneca': 0.00 },
