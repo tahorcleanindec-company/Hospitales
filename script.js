@@ -448,7 +448,7 @@ const products = [
             'Compatible con procesos de lavado hospitalario',
         ],
         images: [
-            '', 
+            'img/detergenteenzimatico.webp', 
         
 
 
@@ -553,9 +553,14 @@ const products = [
             'Compatible con procesos manuales y automáticos',
         ],
         images: [
-            'img/.webp',  
-            'img/.webp', 
-            'img/.webp'  
+            'img/35828 DETERGENTE FLORAL GBR.webp',  
+            'img/44345 DETERGENTE FRESH GBR.webp',
+            'img/44345 DETERGENTE FRESH GBR.webp',
+            'img/45243 DETERGENTE BABY GBR.webp',
+            'img/detergente manzana.webp',
+
+              
+  
         ],
         video: null,
         prices: { '1L': 2.00, 'galon': 5.00, 'caneca': 25.00 },
