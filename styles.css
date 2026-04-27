@@ -1,8 +1,4 @@
-/* ============================================
-   TAHOR CLEAN - CSS RESPONSIVE CORREGIDO
-   Fixes: hero overflow, buttons mobile, 
-          features grid, header, slide height
-   ============================================ */
+
 
 :root {
     --primary:  #06ace1;
@@ -31,9 +27,7 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ============================================
-   RESET GLOBAL — FIX #1: elimina scroll lateral
-   ============================================ */
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -42,7 +36,6 @@
 
 html {
     scroll-behavior: smooth;
-    /* FIX: evita scroll horizontal en cualquier dispositivo */
     overflow-x: hidden;
     width: 100%;
 }
@@ -52,7 +45,6 @@ body {
     background-color: var(--background);
     color: var(--foreground);
     line-height: 1.6;
-    /* FIX: doble seguro contra overflow horizontal */
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
@@ -91,9 +83,7 @@ input, textarea, select {
     font-size: 1rem;
 }
 
-/* ============================================
-   CONTAINER
-   ============================================ */
+
 .container {
     width: 100%;
     max-width: 1280px;
@@ -108,21 +98,18 @@ input, textarea, select {
     .container { padding: 0 2rem; }
 }
 
-/* ============================================
-   BOTONES — FIX #2: botones responsivos en móvil
-   ============================================ */
+
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 0.75rem 1.25rem; /* FIX: reducido para móvil */
-    font-size: 0.9375rem;     /* FIX: tamaño ajustado */
+    padding: 0.75rem 1.25rem; 
+    font-size: 0.9375rem;     
     font-weight: 600;
     border-radius: var(--radius);
     transition: var(--transition);
     white-space: nowrap;
-    /* FIX: evita que el texto desborde */
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
@@ -177,9 +164,7 @@ input, textarea, select {
 
 .btn-full { width: 100%; }
 
-/* ============================================
-   TOP BAR
-   ============================================ */
+
 .top-bar {
     background: var(--primary);
     color: white;
@@ -219,16 +204,13 @@ input, textarea, select {
     .top-bar-left { display: none; }
 }
 
-/* ============================================
-   HEADER — FIX #3: header bien ajustado en móvil
-   ============================================ */
+
 .header {
     background: white;
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
     z-index: 100;
-    /* FIX: evita que el header desborde */
     width: 100%;
     max-width: 100vw;
 }
@@ -237,7 +219,6 @@ input, textarea, select {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* FIX: padding reducido en móvil para no comprimir */
     padding: 0.75rem 1rem;
     gap: 0.75rem;
 }
@@ -250,13 +231,11 @@ input, textarea, select {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    /* FIX: evita que el logo empuje otros elementos */
     flex-shrink: 0;
     min-width: 0;
 }
 
 .logo-icon {
-    /* FIX: logo más pequeño en móvil muy pequeño */
     width: 44px;
     height: 44px;
     border-radius: var(--radius);
@@ -281,12 +260,10 @@ input, textarea, select {
 
 .logo-name {
     font-family: 'Poppins', sans-serif;
-    /* FIX: tamaño responsivo */
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--primary);
     line-height: 1.2;
-    /* FIX: evita desborde del texto */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -306,7 +283,6 @@ input, textarea, select {
     .logo-tagline { font-size: 0.75rem; }
 }
 
-/* Nav desktop */
 .nav-desktop {
     display: none;
     gap: 2rem;
@@ -335,7 +311,6 @@ input, textarea, select {
 .nav-link.active::after { width: 100%; }
 .nav-link.active { color: var(--primary); }
 
-/* Header actions */
 .header-actions {
     display: flex;
     align-items: center;
@@ -345,7 +320,6 @@ input, textarea, select {
     .header-actions { gap: 1rem; }
 }
 
-/* Search */
 .search-container {
     position: relative;
     display: none;
@@ -417,7 +391,6 @@ input, textarea, select {
     border-radius: var(--radius-sm);
 }
 
-/* Cart button */
 .cart-btn {
     position: relative;
     width: 44px;
@@ -451,7 +424,6 @@ input, textarea, select {
     justify-content: center;
 }
 
-/* Mobile menu button */
 .mobile-menu-btn {
     display: flex;
     width: 44px;
@@ -465,7 +437,6 @@ input, textarea, select {
     .mobile-menu-btn { display: none; }
 }
 
-/* Nav mobile */
 .nav-mobile {
     display: none;
     flex-direction: column;
@@ -479,12 +450,9 @@ input, textarea, select {
     border-bottom: 1px solid var(--border);
 }
 
-/* ============================================
-   HERO — FIX #4: altura dinámica, sin overflow
-   ============================================ */
+
 .hero {
     position: relative;
-    /* FIX: altura mínima flexible, no fija */
     min-height: 500px;
     overflow: hidden;
     width: 100%;
@@ -492,7 +460,6 @@ input, textarea, select {
 
 .hero-slider {
     position: relative;
-    /* FIX: altura adaptable según pantalla */
     height: auto;
     min-height: 500px;
 }
@@ -514,14 +481,12 @@ input, textarea, select {
 .slide.active {
     opacity: 1;
     visibility: visible;
-    /* FIX: el slide activo define la altura mínima del contenedor */
     position: relative;
 }
 
 .slide-bg {
     position: absolute;
     inset: 0;
-    /* FIX: evita que el fondo desborde */
     overflow: hidden;
 }
 
@@ -533,9 +498,7 @@ input, textarea, select {
     object-position: center;
 }
 
-/* ============================================
-   SLIDE CONTENT — FIX #5: padding seguro en móvil
-   ============================================ */
+
 .slide-content {
     position: relative;
     min-height: 500px;
@@ -544,7 +507,6 @@ input, textarea, select {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    /* FIX: padding horizontal que no permite overflow */
     padding: 4rem 1.25rem 5rem;
     width: 100%;
 }
@@ -566,13 +528,10 @@ input, textarea, select {
     }
 }
 
-/* ============================================
-   SLIDE TEXT — FIX #6: tipografía escala bien
-   ============================================ */
+
 .slide-text {
     color: white;
     text-align: center;
-    /* FIX: ancho máximo para que no desborde */
     width: 100%;
     max-width: 100%;
 }
@@ -595,12 +554,10 @@ input, textarea, select {
 }
 
 .slide-text h1 {
-    /* FIX: tamaño escalonado para que nunca desborde */
     font-size: clamp(1.75rem, 6vw, 2.5rem);
     margin-bottom: 1rem;
     animation: fadeInUp 0.6s ease 0.1s forwards;
     opacity: 0;
-    /* FIX: evita que palabras largas rompan el layout */
     word-break: break-word;
     hyphens: auto;
 }
@@ -631,16 +588,13 @@ input, textarea, select {
     .slide-text p { margin-left: 0; }
 }
 
-/* ============================================
-   SLIDE BUTTONS — FIX #7: botones no desbordan
-   ============================================ */
+
 .slide-buttons {
     display: flex;
     gap: 0.75rem;
     justify-content: center;
     animation: fadeInUp 0.6s ease 0.3s forwards;
     opacity: 0;
-    /* FIX: wrap cuando no caben en una línea */
     flex-wrap: wrap;
     width: 100%;
 }
@@ -653,7 +607,6 @@ input, textarea, select {
     .slide-buttons { justify-content: flex-start; }
 }
 
-/* FIX: botones del hero con ancho máximo controlado */
 .slide-buttons .btn {
     flex: 1;
     min-width: 0;
@@ -668,7 +621,6 @@ input, textarea, select {
     }
 }
 
-/* Slide image - solo desktop */
 .slide-image {
     display: none;
     justify-content: center;
@@ -684,7 +636,6 @@ input, textarea, select {
     box-shadow: var(--shadow-xl);
 }
 
-/* Slider controls */
 .slider-controls {
     position: absolute;
     bottom: 1.5rem;
@@ -728,7 +679,6 @@ input, textarea, select {
     border-radius: 6px;
 }
 
-/* Animaciones */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -738,9 +688,7 @@ input, textarea, select {
     to   { opacity: 1; transform: translateX(0); }
 }
 
-/* ============================================
-   FEATURES BAR — FIX #8: grid no se rompe
-   ============================================ */
+
 .features-bar {
     background: white;
     padding: 1.5rem 0;
@@ -755,7 +703,6 @@ input, textarea, select {
 
 .features-grid {
     display: grid;
-    /* FIX: 1 columna en móvil muy pequeño, 2 en normal */
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
@@ -775,7 +722,6 @@ input, textarea, select {
 }
 
 .feature-icon {
-    /* FIX: ícono más pequeño en móvil */
     width: 44px;
     height: 44px;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
@@ -806,9 +752,7 @@ input, textarea, select {
     line-height: 1.4;
 }
 
-/* ============================================
-   SECTION HEADER
-   ============================================ */
+
 .section-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -836,9 +780,6 @@ input, textarea, select {
     .section-header h2 { font-size: clamp(2rem, 4vw, 2.5rem); }
 }
 
-/* ============================================
-   CATEGORIES
-   ============================================ */
 .categories-section {
     padding: 3rem 0;
     background: var(--background);
@@ -915,9 +856,7 @@ input, textarea, select {
     .category-card h4 { font-size: 0.875rem; }
 }
 
-/* ============================================
-   PRODUCTS
-   ============================================ */
+
 .products-section {
     padding: 3rem 0;
     background: white;
@@ -956,8 +895,7 @@ input, textarea, select {
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* FIX: 2 columnas desde mobile */
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr); 
 }
 @media (min-width: 480px) {
     .products-grid { gap: 1.25rem; }
@@ -969,7 +907,6 @@ input, textarea, select {
     .products-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
-/* FIX: en pantallas muy pequeñas, 1 columna */
 @media (max-width: 359px) {
     .products-grid { grid-template-columns: 1fr; }
 }
@@ -1004,10 +941,8 @@ input, textarea, select {
 .product-image {
     position: relative;
     height: 200px;
-    /* FIX: fondo neutro para que se vea bien con contain */
     background: #f8fafc;
     overflow: hidden;
-    /* FIX: separación visual sutil */
     border-bottom: 1px solid var(--border);
 }
 @media (min-width: 640px) {
@@ -1017,10 +952,8 @@ input, textarea, select {
 .product-image img {
     width: 100%;
     height: 100%;
-    /* FIX: contain en lugar de cover — muestra el producto completo */
     object-fit: contain;
     object-position: center;
-    /* FIX: padding interno para que el producto no toque los bordes */
     padding: 0.75rem;
     transition: var(--transition);
 }
@@ -1121,9 +1054,6 @@ input, textarea, select {
     transform: scale(1.1);
 }
 
-/* ============================================
-   ABOUT
-   ============================================ */
 .about-section {
     padding: 3rem 0;
     background: var(--background);
@@ -1225,7 +1155,6 @@ input, textarea, select {
 .about-card h3 { font-size: 1.1875rem; margin-bottom: 0.75rem; color: var(--foreground); }
 .about-card p  { font-size: 0.9375rem; color: var(--muted-foreground); }
 
-/* Certifications */
 .certifications {
     background: white;
     border-radius: var(--radius-lg);
@@ -1269,9 +1198,7 @@ input, textarea, select {
 }
 .cert-item span:last-child { font-size: 0.75rem; color: var(--muted-foreground); }
 
-/* ============================================
-   CONTACT
-   ============================================ */
+
 .contact-section { padding: 3rem 0; background: white; }
 @media (min-width: 768px) { .contact-section { padding: 5rem 0; } }
 
@@ -1318,9 +1245,7 @@ input, textarea, select {
 .contact-cta .btn-whatsapp { background: white; color: var(--whatsapp); }
 .contact-cta .btn-whatsapp:hover { background: var(--background); }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+
 .footer {
     background: var(--foreground);
     color: white;
@@ -1375,7 +1300,6 @@ input, textarea, select {
     border-radius: var(--radius);
     background: rgba(255,255,255,0.1);
     color: white;
-    /* FIX: mínimo ancho para no colapsar */
     min-width: 0;
 }
 .newsletter-form input::placeholder { color: rgba(255,255,255,0.5); }
@@ -1415,9 +1339,7 @@ input, textarea, select {
 .footer-legal a { color: rgba(255,255,255,0.6); font-size: 0.875rem; }
 .footer-legal a:hover { color: white; }
 
-/* ============================================
-   MODALES
-   ============================================ */
+
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -1425,13 +1347,13 @@ input, textarea, select {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     display: flex;
-    align-items: flex-end; /* FIX: en móvil sale desde abajo */
+    align-items: flex-end; 
     justify-content: center;
     z-index: 200;
     opacity: 0;
     visibility: hidden;
     transition: var(--transition);
-    padding: 0; /* FIX: sin padding en móvil */
+    padding: 0; 
 }
 
 @media (min-width: 640px) {
@@ -1445,7 +1367,6 @@ input, textarea, select {
 
 .modal {
     background: white;
-    /* FIX: en móvil ocupa toda la pantalla desde abajo */
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     width: 100%;
     max-width: 900px;
@@ -1508,7 +1429,6 @@ input, textarea, select {
     aspect-ratio: 4/3;
     border-radius: var(--radius);
     overflow: hidden;
-    /* FIX: fondo claro para productos con fondo transparente o blanco */
     background: #f8fafc;
     border: 1px solid var(--border);
     display: flex;
@@ -1519,10 +1439,8 @@ input, textarea, select {
 .gallery-main img {
     width: 100%;
     height: 100%;
-    /* FIX: contain para ver el producto completo en el modal */
     object-fit: contain;
     object-position: center;
-    /* FIX: padding para que no toque los bordes */
     padding: 1rem;
     transition: var(--transition);
 }
@@ -1546,7 +1464,6 @@ input, textarea, select {
     border: 2px solid transparent;
     opacity: 0.65;
     transition: var(--transition);
-    /* FIX: mismo fondo neutro */
     background: #f8fafc;
     display: flex;
     align-items: center;
@@ -1562,7 +1479,6 @@ input, textarea, select {
 .thumb img {
     width: 100%;
     height: 100%;
-    /* FIX: contain en las miniaturas también */
     object-fit: contain;
     padding: 0.375rem;
 }
@@ -1639,7 +1555,6 @@ input, textarea, select {
 .product-modal-actions { display: flex; gap: 0.75rem; }
 .product-modal-actions .btn { flex: 1; }
 
-/* Checkout modal */
 .modal-checkout { max-width: 600px; }
 .checkout-content { padding: 1.5rem; }
 @media (min-width: 640px) { .checkout-content { padding: 2rem; } }
@@ -1672,7 +1587,6 @@ input, textarea, select {
     border: 2px solid var(--border);
     border-radius: var(--radius);
     transition: var(--transition);
-    /* FIX: ancho completo en móvil */
     width: 100%;
 }
 .form-group input:focus,
@@ -1733,9 +1647,7 @@ input, textarea, select {
 }
 
 
-/* ============================================
-   CART DRAWER
-   ============================================ */
+
 .drawer-overlay {
     position: fixed;
     inset: 0;
@@ -1751,11 +1663,10 @@ input, textarea, select {
     position: fixed;
     top: 0;
     right: 0;
-    /* FIX: ancho completo en móvil muy pequeño */
     width: 100%;
     max-width: 400px;
     height: 100%;
-    height: 100dvh; /* FIX: dynamic viewport height para móviles con barra de URL */
+    height: 100dvh; 
     background: white;
     z-index: 160;
     transform: translateX(100%);
@@ -1800,7 +1711,6 @@ input, textarea, select {
     border-radius: var(--radius-sm);
     overflow: hidden;
     flex-shrink: 0;
-    /* FIX: fondo neutro */
     background: #f8fafc;
     border: 1px solid var(--border);
     display: flex;
@@ -1811,7 +1721,6 @@ input, textarea, select {
 .cart-item-image img {
     width: 100%;
     height: 100%;
-    /* FIX: contain para ver el producto completo */
     object-fit: contain;
     padding: 0.375rem;
 }
@@ -1858,9 +1767,7 @@ input, textarea, select {
 .cart-summary-row.total { font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .cart-summary .btn { margin-top: 1rem; }
 
-/* ============================================
-   WHATSAPP FLOTANTE
-   ============================================ */
+
 .whatsapp-float {
     position: fixed;
     bottom: 1.5rem;
@@ -1890,9 +1797,7 @@ input, textarea, select {
     50%       { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
 }
 
-/* ============================================
-   UTILIDADES
-   ============================================ */
+
 .sr-only {
     position: absolute;
     width: 1px;
