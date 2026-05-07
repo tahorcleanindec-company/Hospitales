@@ -628,15 +628,10 @@ const sizeIcons = {
 const IVA_RATE = 0.15;
 const WHATSAPP_NUMBER = '+593958812843';
 
-// ──────────────────────────────────────────────────────────────
-// IVA por producto
-// Los alcoholes están exentos de IVA según la normativa local.
-// Cualquier producto cuyo nombre contenga la palabra "alcohol"
-// (con o sin tilde, mayúsculas o minúsculas) se trata como exento.
-// ──────────────────────────────────────────────────────────────
+
 function isExentoIva(product) {
   if (!product || !product.name) return false;
-  return /\balcohol\b/i.test(product.name.normalize('NFD').replace(/[̀-ͯ]/g, ''));
+  return /\balcohol\b/i.test(product.name);
 }
 function ivaRateOf(product) {
   return isExentoIva(product) ? 0 : IVA_RATE;
